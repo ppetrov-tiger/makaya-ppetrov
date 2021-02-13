@@ -1,0 +1,230 @@
+body {
+  background : black;
+  font-family: 'Raleway', sans-serif; /* For adding fonts */
+  /*padding-top: 20px;*/
+  padding-bottom: 20px;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-light {
+  margin-top: 20px;
+  font-size:18px;
+  outline-style: auto;
+  outline-style: thin;
+  outline-color: #1abc9c;
+}
+
+.nav-item {
+  color: #17a68a;
+}
+
+.navbar ul a{
+  color: #17a68a !important;
+}
+
+.navbar ul li:hover,
+.navbar ul li.active {
+  background-color:#1abc9c;
+  border-radius:5px;
+}
+.navbar ul a:hover,
+.navbar ul li.active a {
+  color: #fff !important;
+}
+
+/* IndexPage */
+.indexText {
+  margin-top:100px;
+  overflow:hidden;
+  float:left;
+  padding-right:20px;
+  text-align: center;
+  color:#fff;
+}
+
+.indexText a {
+  background-color:#1abc9c;
+  border:medium none;
+  border-radius:25px;
+  color:#fff;
+  display:inline-block;
+  font-weight:500;
+  font-size:1.7em;
+  padding:12px;
+  text-align:center;
+  text-decoration:none;
+  width:250px;
+}
+
+.indexText a:hover {
+  background-color:#17a68a;
+  color:#fff;
+}
+
+/* ContactsPage */
+.contactsTextLeft {
+  margin-top:100px;
+  overflow:hidden;
+  float:left;
+  padding-right:20px;
+  text-align: left;
+  color:#fff;
+}
+
+.contactsTextRight {
+  margin-top:100px;
+  overflow:hidden;
+  float:left;
+  padding-right:20px;
+  text-align: right;
+  color:#fff;
+}
+
+.contactsTextRight p,
+.contactsTextLeft p,
+.myGreenColor {
+  color: #1abc9c
+}
+.contactsImages {
+  height: 150px;
+}
+
+.butText {
+  margin-top:25px;
+  overflow:hidden;
+  float:left;
+  padding-right:20px;
+  text-align: center;
+}
+
+.butText a {
+  border:medium none;
+  border-radius:25px;
+  color: #fff;
+  display:inline-block;
+  font-weight:500;
+  font-size:1.7em;
+  padding:12px;
+  text-align:center;
+  text-decoration:none;
+  width:250px;
+}
+
+.butText a:hover {
+  color:#fff;
+}
+
+.mapStyle {
+  height:300px;
+  width:640px;
+  z-index:2;
+  position:absolute;
+  margin-top:25px;
+}
+
+/* Products Page */
+.card-flip { /* entire container, keeps perspective */
+  perspective: 1000px;
+  margin-top:100px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card-flip:hover .flip, .card-flip.hover .flip { /* flip the pane when hovered */
+  transform: rotateY(180deg);
+}
+
+.card-flip,
+.front,
+.back {
+  width: 300px;
+  height: 300px;
+}
+
+.flip { /* flip speed goes here */
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back { /* hide back of pane during swap */
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front { /* front pane, placed above back */
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back { /* back, initially hidden pane */
+  transform: rotateY(180deg);
+}
+
+.cardStyleFront {
+  background-color: #fff !important;
+  border-radius: 10px;
+  border-color:#1abc9c;
+  border-width:2px;
+  height: 300px;
+}
+
+.cardStyleBack {
+  background-color: #1abc9c !important;
+  border-radius: 10px;
+  border-color:#fff;
+  border-width:2px;
+  height: 300px;
+}
+
+.cardImgStyle {
+  height: 180px;
+  width: 100%;
+}
+
+.cardStyleBack a {
+  background-color: transparent:70% !important;
+  border:medium;
+  border-radius:5px;
+  border-color: #fff;
+  color:#1abc9c !important;
+  display:inline-block;
+  font-weight:500;
+  font-size:16px;
+  padding:12px;
+  text-align:center;
+  text-decoration:none;
+  width:130px;
+}
+
+.cardStyleBack a:hover {
+  opacity: 70%;
+  color:#fff;
+}
+
+.cardButtonPos {
+  position: fixed;
+  bottom: 15px;
+  right: 83px;
+}
+
+
+/* Background */
+#myBackground {
+  filter: opacity(75%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  transition: 1s opacity;
+  z-index: -9999;
+}
